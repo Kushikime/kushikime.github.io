@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+*{
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+.header{
+    background: url('../img/home_bg.jpg') no-repeat;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:800px;
+    text-align: center;
+    * {
+        color:white;
+    }
+    .top_menu{
+        img{
+            max-height:40px;
+        }
+        justify-content: space-between;
+        display: flex;
+        padding: 80px 300px 0px 300px;
+        ul{
+            display: flex;
+            list-style-type: none;
+            li{
+                display: flex;
+                margin:15px 5px;
+                a{
+                    padding: 0px 10px;
+                    display:flex;
+                    text-decoration: none;
+                    justify-content: center;
+                    align-items: center;
+                }
+                a:hover, a:hover i{
+                    color: gold;
+                }
+            }
+        }
+    }
+    .header_content{
+        margin-top: 150px;
+        p{
+            text-align: center;
+            width:600px;
+            margin:auto;
+            opacity: 0.9;
+            font-size: 110%;
+        }
+        h1{
+            font-size: 380%;
+        }
+    }
+    .header_footer{
+        margin-top: 240px;
+        i{
+            animation-duration: 2s;
+        }
+        i:hover{
+            cursor: pointer;
+        }
+    }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    .filter_block{
+        height:140px;
+        background-color: #f5f6f7;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding:0 250px;
+        div{
+            input[type="checkbox"]{
+                display: none;
+            }
+            input[type="checkbox"] + label:before{
+                content: "\2714";
+                color: darkgoldenrod;
+                border:2px solid #aa9b77;
+                border-radius: 4px;
+                padding: 0px 8px 0px 8px;
+                margin-right: 10px;
+                margin-left: 30px;
+                cursor: pointer;
+                vertical-align:middle;
+                color: transparent;
+            }
+            input[type="checkbox"]:checked + label:before{
+                color: #aa9b77;
+            }
+        }
+        button{
+            padding: 8px 36px;
+            color:white;
+            background: #aa9b77;
+            border:none;
+            border-radius: 3px;
+        }
+        button:hover{
+            cursor: pointer;
+            background:rgb(155, 138, 98);
+        }
+    }
+    .products{
+        margin: auto;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        .men{
+            width:80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            h3{
+                margin: auto;
+                padding-top: 85px;
+                text-align: center;
+                color:#aa9b77;
+            }
+            hr{
+                margin: auto;
+                width: 90%;
+                color:#aa9b77;
+            }
+            .product_cards{
+                width: 90%;
+                display: flex;
+                margin: auto;
+                .product_card{
+                    margin:60px 50px 60px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #f5f6f7;
+                    height: 430px;
+                    width:33.3%;
+                    transition: 0.6s;
+                    .card_top{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        width: 100%;
+                        padding:30px 0px;
+                        font-size: 115%;
+                        a{
+                            color:black;
+                            text-decoration: none;
+                        }
+                        form{
+                            input[type='checkbox']{
+                                display:none;
+                            }
+                            input[type="checkbox"] + label:before{
+                                content: "";
+                                border-radius: 50%;
+                                display: inline-block;
+                                height: 17px !important;
+                                width: 17px;
+                                margin-left: 5px;
+                                cursor: pointer;
+                            }
+                            input[type="checkbox"]:checked + label:before{
+                                background-color: black;
+                            }
+                            input[type="checkbox"] + label[for='red']:before{
+                                background-color:#ec0000;
+                            }
+                            input[type="checkbox"] + label[for='blue']:before{
+                                background-color:#33ccff;
+                            }
+                            input[type="checkbox"] + label[for='yellow']:before{
+                                background-color:#ffcc00;
+                            }
+                        }
+                    }
+                    .card_content{
+                        display: flex;
+                        flex-direction: row;
+                        img{
+                            margin: auto;
+                            padding-top: 10px;
+                            max-height:200px;
+                        }
+                    }
+                    
+                    .card_desc{
+                        width: 100%;
+                        display:flex;
+                        flex-direction: row;
+                        color:#aa9b77;
+                        font-size: 110%;
+                        font-weight: 800;
+                        padding: 35px 0px;
+                        text-align: center;
+                        p{
+                            margin: auto;
+                            text-align: center;
+                            span{
+                                text-align: center;
+                                color:black;
+                            }
+                        }
+                    }
+                }
+                .product_card:hover{
+                    transform: scale(1.15);
+                }
+                .product_active{
+                    border:7px solid #aa9b77 !important;
+                }
+                
+            }
+        }
+    }
+}
+.footer{
+    background: #aa9b77;
+    width: 100%;
+    .footer_top_part{
+        height: 400px;
+        padding-top: 100px;
+        div{
+            margin: auto;
+            width: 500px;
+            border: 2px solid #837659;
+            color: #837659;
+            text-align: center;
+            border-radius: 15px;
+            padding: 80px 200px;
+            h2{
+                margin-top: -25px;
+            }
+            p{
+                color: black;
+                opacity: 0.85;
+                text-align: center;
+                width: 500px;
+                margin: auto;
+            }
+        }
+        
+        
+    }
+    .footer_center_part{
+        background-color: #535253;
+        color:white;
+        text-align: left;
+        padding: 25px;
+        p{
+            text-align: left;
+            margin-left: 70px;
+            i{
+                color:grey;
+                font-size: 130%;
+            }
+            span{
+                margin-left: 15px;
+            }
+        }
+    }
+    .footer_bottom_part{
+        background-color: #424242;
+        padding:180px 120px 85px 120px;
+        color:white;
+        .left_part{
+            width:500px;
+            p{
+                text-align: left;
+            }
+        }
+        .right_part{
+            float: right;
+            h2{
+                margin-top:-35px;
+            }
+        }
+    }
+}
+body{
+    margin: 0;
+    p{
+        text-align: center;
+    }
+}

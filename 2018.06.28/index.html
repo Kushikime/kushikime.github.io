@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>treking</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+     <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top-100
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("top_menu");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("fixed-top");
+    header.classList.add("fixed_menu");
+  } else {
+    header.classList.remove("fixed-top");
+    header.classList.remove("fixed_menu");
+  }
+}
+</script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="top_menu">
+                <img  class="animated fadeInDown" src="./img/Livello-87.png" alt="#">
+                
+                <ul id="top_nav" class="animated fadeInDown">
+                    <li class="animated fadeIn"><a href="#">Home</a></li>
+                    <li class="animated fadeIn"><a href="#products">Products</a></li>
+                    <li class="animated fadeIn"><a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a></li>
+                </ul>
+            </div>
+            
+            <div class="header_content">
+                <h1 class="animated fadeIn">Our clothing , your comfort</h1>
+            
+                <p class="animated fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolor cupiditate fuga quis, doloremque, quam mollitia neque fugiat excepturi.</p>
+            </div>
+            
+            <div class="header_footer">
+                <a href="#scroll"><i class="fas fa-angle-down fa-3x animated infinite flash"></i></a>
+            </div>
+            
+        </div>
+        <div class="content">
+            <div class="filter_block" id="scroll">
+                
+                <div>
+                    <input type="checkbox" id="men" name="men" checked/>
+                    <label for="men">MEN</label>
+                    <input type="checkbox" id="women" name="women" checked/>
+                    <label for="women">WOMEN</label>
+                    <input type="checkbox" id="children" name="children"/>
+                    <label for="children">CHILDREN</label>
+                </div>
+                
+                <button>SEE ALL PRODUCTS</button>
+            </div>
+            
+            <div class="products" id="products">
+                <div class="men">
+                    <div>
+                        <h3>Men</h3>
+                        <hr>
+                    </div>
+                    <div class="product_cards">
+                        <div class="product_card product_active">
+                            <div class="card_top">
+                                <a href="#">Size <i class="fas fa-angle-down"></i></a>
+                                <form action="#">
+                                    <input type="checkbox" name="red">
+                                    <label for="red"></label>
+                                    <input type="checkbox" name="blue">
+                                    <label for="blue"></label>
+                                    <input type="checkbox" name="yellow">
+                                    <label for="yellow"></label>
+                                </form>
+                            </div>
+                            <div class="card_content">
+                                    <img src="./img/t-shirt-men.png" alt="">
+                            </div>
+                            <div class="card_desc">
+                                <p>T-SHIRT<br><span>5,00€</span></p>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="card_top">
+                                <a href="#">Size <i class="fas fa-angle-down"></i></a>
+                                <form action="#">
+                                    <input type="checkbox" name="red">
+                                    <label for="red"></label>
+                                    <input type="checkbox" name="blue">
+                                    <label for="blue"></label>
+                                    <input type="checkbox" name="yellow">
+                                    <label for="yellow"></label>
+                                </form>
+                            </div>
+                            <div class="card_content">
+                                    <img src="./img/pans-men.png" alt="">
+                            </div>
+                            <div class="card_desc">
+                                <p>PANTS FORCLAZ<br><span>30,00€</span></p>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="card_top">
+                                <a href="#">Size <i class="fas fa-angle-down"></i></a>
+                                <form action="#">
+                                    <input type="checkbox" name="red">
+                                    <label for="red"></label>
+                                    <input type="checkbox" name="blue">
+                                    <label for="blue"></label>
+                                    <input type="checkbox" name="yellow">
+                                    <label for="yellow"></label>
+                                </form>
+                            </div>
+                            <div class="card_content">
+                                    <img src="./img/backpack-men.png" alt="">
+                            </div>
+                            <div class="card_desc">
+                                <p>BACKPACK<br><span>60,00€</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="men">
+                    <div>
+                        <h3>Women</h3>
+                        <hr>
+                    </div>
+                    <div class="product_cards">
+                        <div class="product_card">
+                            <div class="card_top">
+                                <a href="#">Size <i class="fas fa-angle-down"></i></a>
+                                <form action="#">
+                                    <input type="checkbox" name="red">
+                                    <label for="red"></label>
+                                    <input type="checkbox" name="blue">
+                                    <label for="blue"></label>
+                                    <input type="checkbox" name="yellow">
+                                    <label for="yellow"></label>
+                                </form>
+                            </div>
+                            <div class="card_content">
+                                    <img src="./img/jacket_women.png" alt="">
+                            </div>
+                            <div class="card_desc">
+                                <p>GIACKET<br><span>30,00€</span></p>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="card_top">
+                                <a href="#">Size <i class="fas fa-angle-down"></i></a>
+                                <form action="#">
+                                    <input type="checkbox" name="red">
+                                    <label for="red"></label>
+                                    <input type="checkbox" name="blue">
+                                    <label for="blue"></label>
+                                    <input type="checkbox" name="yellow">
+                                    <label for="yellow"></label>
+                                </form>
+                            </div>
+                            <div class="card_content">
+                                    <img src="./img/boots_women.png" alt="">
+                            </div>
+                            <div class="card_desc">
+                                <p>TREKKING SHOES<br><span>80,00€</span></p>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="card_top">
+                                <a href="#">Size <i class="fas fa-angle-down"></i></a>
+                                <form action="#">
+                                    <input type="checkbox" name="red">
+                                    <label for="red"></label>
+                                    <input type="checkbox" name="blue">
+                                    <label for="blue"></label>
+                                    <input type="checkbox" name="yellow">
+                                    <label for="yellow"></label>
+                                </form>
+                            </div>
+                            <div class="card_content">
+                                    <img src="./img/t-shirt-women.png" alt="">
+                            </div>
+                            <div class="card_desc">
+                                <p>T-SHIRT<br><span>20,00€</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_top_part">
+                <div>
+                    <h2>ABOUT US</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo suscipit atque aliquid fugiat eligendi ea illum provident sed sunt. Incidunt sed iure assumenda ipsam placeat nesciunt voluptates quasi ipsa, rerum.</p>
+                </div>
+            </div>
+            <div class="footer_center_part">
+                <p><i class="fab fa-twitter"></i><span> “ E-commerce psd theme available ”</span></p>
+            </div>
+            <div class="footer_bottom_part">
+                <div class="left_part">
+                    <h1>TREKKING</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique numquam, aspernatur expedita repudiandae ipsum culpa assumenda. Saepe hic architecto, eaque impedit vel modi repudiandae quibusdam voluptas dolores repellat quisquam, nihil soluta voluptatem, eos voluptatum rerum magnam! Molestiae quibusdam, ratione officia.
+                    </p>
+                </div>
+                
+                <div class="right_part">
+                    <h2>Design by gianluca cosetta</h2>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
