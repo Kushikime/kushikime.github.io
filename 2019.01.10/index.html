@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  
+    <div class="products_list">
+       <img src="./img/logo.png" class="logo" alt="">
+        
+        
+        <a class="toggleButton" href="#">
+            <span></span>
+        </a>
+    
+    </div>
+    <ul id="productMenu">
+        <li><a href="#" class="active" id="product1">Product 1</a></li>
+        <li><a href="#" id="product2">Product 2</a></li>
+        <li><a href="#" id="product3">Product 3</a></li>
+        <li><a href="#" id="product4">Product 4</a></li>
+        <li><a href="#" id="product5">Product 5</a></li>
+        <li><a href="#" id="product6">Product 6</a></li>
+    </ul>
+   
+
+    <main>
+        <div class="product_card">
+            <div class="product_card__header">
+                <p class="product_title">FOR GAMERS BY GAMERS TEE</p>
+                
+                <img src="./img/prod_image.jpg"  alt="prod_image" id="productImage">
+                <div class="image__social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="product_card__info">
+                <div class="info__top">
+                    <p class="product_id">Item #: 701642853695</p>
+                    
+                    <span class="old_price">
+                       $29.50
+                    </span>
+                        
+                    <span class="current_price">
+                        $19.99
+                    </span>
+                    
+                    <br>
+                    
+                    <div class="product_rate">
+                        <ul>
+                            <li class="active">
+                                <i class="fas fa-star"></i>
+                            </li>
+                            <li class="active">
+                                <i class="fas fa-star"></i>
+                            </li>
+                            <li class="active">
+                                <i class="fas fa-star"></i>
+                            </li>
+                            <li class="active">
+                                <i class="fas fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" id="socialHover">Share it!</a>
+                </div>
+               
+                <div class="info__social" id="infoSocial">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="activeExit">
+                                <i class="fas fa-times fa2-x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="info__content">
+                    <p class="title">DETAILS:</p>
+                    <p class="product_description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    </p>
+                    
+                    <div class="product_variants">
+                        
+                        <div class="product_size">
+                            <p class="title">SELECT A SIZE:</p>
+                            
+                            <input type="radio" name="productSize" id="size1" value="xs">
+                            <label for="size1">xs</label>
+                            
+                            <input type="radio" name="productSize" id="size2" value="s">
+                            <label for="size2">s</label>
+                            
+                            <input type="radio" name="productSize" id="size3"
+                            value="m">
+                            <label for="size3">m</label>
+                        </div>
+                        
+                        <div class="product_color">
+                            <p class="title">SELECT A COLOR:</p>
+                            
+                            <input type="radio" name="productColor" id="color1" value="blue"/>
+                            <label for="color1"></label>
+                            
+                            <input type="radio" name="productColor" id="color2" value="green">
+                            <label for="color2"></label>
+                            
+                            <input type="radio" name="productColor" id="color3"
+                               value="dark-pink">
+                            <label for="color3"></label>
+                            
+                            <input type="radio" name="productColor" id="color4" value="purple">
+                            <label for="color4"></label>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="addToCart">
+                        <a href="#" class="addToCart">ADD TO CART</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="other_products">
+            <p class="topText">YOU MAY ALSO LIKE</p>
+            
+            <div class="slider">
+                <div class="slide fade product1" id="slide-1" >
+                    <img src="./img/slide1.jpg" alt="product_img">
+                    <span class="new_price"></span>
+                </div>
+                
+                <div class="slide fade product2" id="slide-2">
+                    <img src="./img/slide2.jpg" alt="product_img">
+                    <span class="price"></span>
+                </div>
+                
+                <div class="slide fade product3" id="slide-3">
+                    <img src="./img/slide3.jpg" alt="product_img">
+                    <span class="price"></span>
+                </div>
+                <div class="slide fade product4" id="slide-4">
+                    <img src="./img/slide4.jpg" alt="product_img">
+                    <span class="new_price"></span>
+                </div>
+                <div class="slide fade product5" id="slide-5">
+                    <img src="./img/slide5.jpg" alt="product_img">
+                    <span class="price"></span>
+                </div>
+                <div class="slide fade product6" id="slide-6">
+                    <img src="./img/slide6.jpg" alt="product_img">
+                    <span class="price"></span>
+                </div>
+                
+                <span class="prev" onclick="doSlide(-1)"><i class="fas fa-chevron-left"></i></span>
+                
+                <span class="next" onclick="doSlide(1)"><i class="fas fa-chevron-right"></i></span>
+            </div>
+            
+            <div class="product_cards">
+                <div class="product product1" id="slide-1" >
+                    <img src="./img/slide1.jpg" alt="product_img">
+                    <span class="new_price"></span>
+                    <p class="title"></p>
+                </div>
+                <div class="product product2" id="slide-1" >
+                    <img src="./img/slide2.jpg" alt="product_img">
+                    <span class="new_price"></span>
+                    <p class="title"></p>
+                </div>
+                <div class="product product3" id="slide-1" >
+                    <img src="./img/slide3.jpg" alt="product_img">
+                    <span class="new_price"></span>
+                    <p class="title"></p>
+                </div>
+                <div class="product product4" id="slide-1" >
+                    <img src="./img/slide4.jpg" alt="product_img">
+                    <span class="new_price"></span>
+                    <p class="title"></p>
+                </div>
+                <div class="product product5" id="slide-1" >
+                    <img src="./img/slide5.jpg" alt="product_img">
+                    <span class="new_price"></span>
+                    <p class="title"></p>
+                </div>
+                <div class="product product6" id="slide-1" >
+                    <img src="./img/slide6.jpg" alt="product_img">
+                    <span class="new_price"></span>
+                    <p class="title"></p>
+                </div>
+            </div>
+            <p class="bottomText" id="product_name"></p>
+        </div>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

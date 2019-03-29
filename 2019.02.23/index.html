@@ -1,0 +1,284 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" href="./style.css" type="text/css">
+	</head>
+	<body>
+		<!--All page wrapper-->
+		<div id="main">
+		<!--Header-->
+			<header>
+				
+				<!--Mobile menu button-->
+				<div>
+					<span id="menuToggleButton"></span>
+				</div>
+				
+				<!--Logo-->
+				<div>
+					<img src="./img/logo.png" alt="logo">
+				</div>
+				
+				<!--Navigation-->
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Category</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</nav>
+				
+				<!--Cart section in header-->
+				<div class="cart">
+					<img src="./img/cart.png" alt="cartImage">
+					<span id="itemsInCart">2</span>
+					<span id="totalCost">$880</span>
+				</div>
+				
+			</header>
+		
+		<!--Card section-->
+			<div class="productCard">
+			
+				<!--Main content of product -->
+				<div class="mainContent">
+				
+					<!--Category mobile section-->
+					<div class="mobileCategory">
+						<span id="backToCategory"><i class="fas fa-arrow-left"></i></span>
+						<div class="productCategory">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Category</a></li>
+								<li><a href="#">Notebook</a></li>
+								<li><a href="#">Asus</a></li>
+								<li><a href="#" class="active">Asus ZenBook</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<!--Block with images-->
+					<div class="productImageBlock">
+						<!--Left image slider-->
+						<div class="imageSlider">
+							<img src="./img/image1.png" alt="imageFirst">
+							<img src="./img/image2.png" alt="imageSecond">
+							<img src="./img/image3.png" alt="imageThird">
+							<img src="./img/image4.png" alt="imageFourth">
+							<img src="./img/image5.png" alt="imageFifth">
+						</div>
+						<!--Main product image-->
+						<div class="mainProductImage">
+						
+							<img src="./img/mainImage.png" alt="mainProductImage" id="mainProductImage">
+						
+							<!--Under main image control bar-->
+							<div class="bottomBar">
+								<!--Image slider-->
+								<div class="sliderControl">
+									<span><i class="fas fa-arrow-left fa-fa1x"></i></span>
+									<span id="sliderCounter"><i>1/7</i></span>
+									<span><i class="fas fa-arrow-right fa-fa1x"></i></span>
+								</div>
+								
+								<!--Social links to share the product-->
+								<div class="shareSocial">
+									<ul>
+										<li><a href="#"><i class="fab fa-twitter fa-fa1x"></i></a></li>
+										<li><a href="#"><i class="fab fa-linkedin-in fa-fa1x"></i></a></li>
+										<li><a href="#"><i class="fab fa-behance fa-fa1x"></i></a></li>
+										<li><a href="#"><i class="fas fa-basketball-ball fa-fa1x"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--Product details-->
+					<div class="productDetails">
+					
+						<!--Product desktop categories-->
+						<div class="productCategory">
+							<ul>
+								<li><a href="#"><i class="fas fa-arrow-left"></i></a></li>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Category</a></li>
+								<li><a href="#">Notebook</a></li>
+								<li><a href="#">Asus</a></li>
+								<li><a href="#" class="active">Asus ZenBook</a></li>
+							</ul>
+						</div>
+						
+						<!--Product Name-->
+						<div class="productName">ASUS Zenbook UX305FA</div>
+						
+						<!--Product new & old price + ratings & reviews-->
+						<div class="productInfo">
+							<div class="price">
+								<span class="currentPrice">$880</span>
+								<span class="oldPrice">$960</span>
+							</div>
+							
+							
+							<div class="reviewsBlock">
+								<span class="rating">4.5</span>
+								<span class="reviews">(88) Reviews</span>
+							</div>
+						</div>
+						
+						<!--Product Description-->
+						<div class="productDescription">
+							<span><i>ZEN Spirit</i></span>
+							<i><p>Inspired enlightenment with equal measures of top-end innovation, truly unique art and superior-quality engineering. ZenBook reminds us of the value of simplicity the importance of energy in life.</p></i>
+						</div>
+						
+						<!--Action block-->
+						<div class="productAction">
+						
+							<!--Choose product variants-->
+							<div class="productVariants">
+							
+								<!--Product quantity to order-->
+								<div class="productQuantity">
+									
+									<!--This block created, to do the response markup easier-->
+									<div class="mobileQuantity">
+										<span>Quantity:</span>
+									
+										<div>
+											<input type="button" value="-" id="addQuantity">
+											<span class="currentQuantity">1</span>
+											<input type="button" value="+" id="removeQuantity">
+										</div>
+									</div>
+								</div>
+								
+								<!--Choose the product color-->
+								<div class="productColor">
+									<span>Color:</span>
+									<div class="colorVariants">
+										
+										<input id="first" type="radio" name="color" value="black" checked>
+										<label for="first"></label>
+										<input id="second" type="radio" name="color" value="pink">
+										<label for="second"></label>
+										<input id="third" type="radio" name="color" value="gray">
+										<label for="third"></label>
+									</div>
+								</div>
+							</div>
+							
+							<!--Buy or add the product to the wishlist-->
+							<div class="productOrder">
+								<a href="#" id="addToCart"><img src="./img/buy.png" alt=""> TO CART</a>
+								<a href="#" id="addToWishlist">+ TO WISHLIST</a>
+							</div>
+						</div>
+						
+						<!--Bottom part with comments and details-->
+						<div class="other">
+
+							<!--Tab's bar-->
+							<div class="tabsControl">
+								<ul>
+									<li class="active"><a href="#">Comments (<span id="totalComments">2</span>)</a></li>
+									<li><a href="#">Details & Specs</a></li>
+								</ul>
+							</div>
+
+							<!--Comment Form-->
+							<form action="#">
+								<div class="name">
+									<input type="text" name="firstName" placeholder="First Name">
+									<input type="text" name="lastName"  placeholder="Last Name">
+								</div>
+
+								<!--Comment field-->
+								<div class="comment">
+									<input type="text" name="comment" placeholder="Comment">
+								</div>
+
+								<!--Set your rate-->
+								<div class="rating">
+									<div>
+										<span>Your rating:</span>
+										<div>
+											<input id="One" name="rating" type="radio" value="1">
+												<label for="One">1</label>
+											<input id="Two" name="rating" type="radio" value="2">
+												<label for="Two">2</label>
+											<input id="Three" name="rating" type="radio" value="3">
+												<label for="Three">3</label>
+											<input id="Four" name="rating" type="radio" value="4">
+												<label for="Four">4</label>
+											<input id="Five" name="rating" type="radio" value="5" checked>
+												<label for="Five" class="active">5</label>
+										</div>
+									</div>
+									<input type="submit" value="WRITE">
+								</div>
+							</form>
+							
+							<!--All current comments-->
+							<div class="comments">
+								
+								<div class="comment" id="firstComment">
+									
+									<!--User Name and date-->
+									<div>
+										<div>
+											<span id="user">John Smith</span>
+											<span id="date"><i>21 Jun, 2pm</i></span>
+										</div>
+										
+										<span class="rated">4</span>
+									</div>
+									
+									<!--User comment content-->
+									<p class="commentText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+									
+								</div>
+								
+								<div class="comment" id="secondComment">
+								
+									<div>
+										<div>
+											<span id="user">Jefrey Lebowski</span>
+											<span id="date"><i>21 Jun, 12pm</i></span>
+										</div>
+										
+										<span class="rated">5</span>
+									</div>
+									
+									<p class="commentText">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+									
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<!--Footer-->
+			<footer>
+				<div class="socialLinks">
+					<ul>
+						<li><a href="#"><i class="fab fa-twitter fa-fa1x"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in fa-fa1x"></i></a></li>
+						<li><a href="#"><i class="fab fa-behance fa-fa1x"></i></a></li>
+						<li><a href="#"><i class="fas fa-basketball-ball fa-fa1x"></i></a></li>
+					</ul>
+					
+					<p>Copyright: Nil Yen, All Rights Reserved.</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+	</html>
