@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KushiNiiPlay</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/animate.min.css">
+</head>
+<body>
+
+   <aside id="leftNavBlock">
+       <div class="logo animated fadeInDown" >
+           <img src="./image/logo.png" alt="logo" width="146">
+       </div>
+       
+       <div class="profileBlock">
+           <img src="./image/profile.jpg" alt="profileIMG" class="animated fadeInLeft">
+           <div class="profileDetails animated fadeIn">
+               <span class="name">Erik Demchak</span>
+               <span class="jobTitle">Web Developer</span>
+           </div>
+       </div>
+       
+       <nav class="navApp animated fadeIn">
+           <ul>
+               <li class="active"><a href="#"><span>Dashboard</span><i class="fas fa-home"></i></a></li>
+               <li><a href="#"><span>UI Elements</span><i class="fas fa-map-marker-alt"></i></a></li>
+               <li><a href="#"><span>Icons</span><i class="fas fa-id-badge"></i></a></li>
+               <li><a href="#"><span>Forms</span><i class="fas fa-list-ul"></i></a></li>
+               <li><a href="#"><span>Charts</span><i class="fas fa-chart-bar"></i></a></li>
+               <li><a href="#"><span>Tables</span><i><i class="fas fa-table"></i></i></a></li>
+               <li><a href="#"><span>Sample Pages</span><i class="fas fa-cubes"></i></a></li>
+           </ul>
+       </nav>
+       
+       <div id="projectsBlock">
+           <h1>Projects</h1>
+           
+           <hr>
+           
+           <button id="addProject">
+               + Add a Project
+           </button>
+           
+           <hr>
+       </div>
+       
+       <div id="categoriesBlock">
+          
+          
+           <h1>Categories</h1>
+           
+           <ul>
+               <li><span></span>Friends</li>
+               <li><span></span>Pro</li>
+           </ul>
+           
+       </div>
+   </aside>
+   
+   <div id="wrapper">
+       <header id="topHeaderBlock" >
+           <div class="searchBlock">
+               <span><i class="fas fa-search"></i></span>
+               <input id="searchInput" type="text" placeholder="Search projects..." class="search">
+           </div>
+           <nav class="navBlock animated fadeIn">
+               <ul>
+                   <li><a href="#"><div class="profileBlock">
+                   <img src="./image/profile.jpg" alt="profileIMG">
+                   <div class="profileDetails">
+                       <span class="name">Erik Demchak</span>
+                    </div></div></a></li>
+                   <li><a href="#"><i class="far fa-folder"></i></a></li>
+                   <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                   <li><a href="#"><i class="far fa-bell"></i></a></li>
+                   <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+                   <li><a href="#"><i class="fas fa-list-ol"></i></a></li>
+               </ul>
+           </nav>
+       </header>
+
+       <main id="mainContentBlock">
+            <div id="currentTab">
+                <div>
+                    <a href="#"><i class="fas fa-home"></i></a>
+                    <span id="tabName">    Dashboard</span>
+                </div>
+                
+                <a href="#">
+                    Overview
+                    <i class="fas fa-info-circle"></i>
+                </a>
+            </div>
+            
+            <div id="topCards">
+                <div class="card animated fadeIn">
+                    <div class="topCategory">
+                        <span>Weekly Sales</span>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    
+                    <span class="result">
+                        $150,000
+                    </span>
+                    
+                    <span class="comment">
+                        Increased by 60%
+                    </span>
+                </div>
+                
+                <div class="card animated fadeIn">
+                    <div class="topCategory">
+                        <span>Weekly Orders</span>
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    
+                    <span class="result">
+                        49,550
+                    </span>
+                    
+                    <span class="comment">
+                        Increased by 10%
+                    </span>
+                </div>
+                
+                <div class="card animated fadeIn">
+                    <div class="topCategory">
+                        <span>Visitors Online</span>
+                        <i class="far fa-gem"></i>
+                    </div>
+                    
+                    <span class="result">
+                        95,574
+                    </span>
+
+                    <span class="comment">
+                        Increased by 5%
+                    </span>
+                </div>
+            </div>
+       </main>
+
+   </div>
+</body>
+</html>
