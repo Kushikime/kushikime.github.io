@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Php</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+   
+   <header>
+       <nav>
+           <ul id="menu">
+               <li><a href="#" class="links">Главная</a></li>
+               <li><a href="#" class="links">Категории</a></li>
+               <li><a href="#" class="links">Отзывы</a></li>
+               <li><a href="#" class="links">Связь</a></li>
+           </ul>
+           <a href="#" class="toggle_nav">
+               <span></span>
+           </a>
+       </nav>
+   </header>
+   <div id="mobile_menu_block">
+       <ul id="mobile_menu">
+           <li><a href="#">Главная</a></li>
+           <li><a href="#">Категории</a></li>
+           <li><a href="#">Отзывы</a></li>
+           <li><a href="#">Связь</a></li>
+        </ul>
+   </div>
+    <main>
+        <div id="clicked_link">
+            <p>You clicked on : Главная</p>
+        </div>
+       <h1> What we need to do?</h1>
+       
+        <div>
+            
+            <ol>
+                <li>
+                    Add to navigation links on click event.
+                    <input type="checkbox" class="checked_box">
+                    <span class="checkmark"></span>
+                </li>
+                
+                <li>
+                    Do a mobile version menu
+                    <input type="checkbox" class="checked_box">
+                    <span class="checkmark"></span>
+                </li>
+                
+                <li>
+                    Create a slider
+                    <input type="checkbox" class="checked_box">
+                    <span class="checkmark"></span>
+                </li>
+                
+                <li>
+                    Add a login/registration links
+                    <input type="checkbox" class="checked_box">
+                    <span class="checkmark"></span>
+                </li>
+                
+                <li>
+                    On click for login/registration should open a pop-up form.
+                    <input type="checkbox" class="checked_box">
+                    <span class="checkmark"></span>
+                </li>
+                
+                <li>
+                    Do the logic for registration and log in
+                    <input type="checkbox" class="checked_box">
+                    <span class="checkmark"></span>
+                </li>
+                
+                <li>
+                    Add a footer
+                    <input type="checkbox" class="checked_box">
+                    <span class="checkmark"></span>
+                </li>
+            </ol>
+        </div>
+    </main>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function sleep(delay) {
+    var start = new Date().getTime();
+    while (new Date().getTime() < start + delay);
+  }
+    
+$('.toggle_nav').on('click', function(e){
+    e.preventDefault;
+    $(this).toggleClass('active');
+    $('#mobile_menu_block').toggleClass('active_menu_block');
+    $('#mobile_menu').toggleClass('active_menu');
+});
+
+$('.links').on('click', function(e){
+    e.preventDefault;
+    $('#clicked_link').css('opacity','1');
+    $('#clicked_link').text("Вы нажали на : "+$(this).text());
+});
+    
+$('.checked_box').click(function() {
+    if ($('.checked_box').is(':checked')){
+        $(this).parent().toggleClass('completed');
+    };
+    if ($('.checked_box').is(!(':checked'))){
+        $(this).parent().toggleClass('completed');
+    };
+});
+</script>
+</body>
+
+</html>
